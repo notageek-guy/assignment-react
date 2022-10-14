@@ -12,7 +12,7 @@ const mobileLayout = `
 
   const desktopLayout = `
       relative
-      -mt-40    bg-white 
+      -mt-36    bg-white 
       mx-auto 
       w-[80%]
       rounded-3xl
