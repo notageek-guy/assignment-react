@@ -3,12 +3,23 @@ import React, { useEffect, useState } from "react";
 import logo from "../assets/Logo.png";
 export default function Navbar() {
   const [width, setWidth] = useState();
-  const breakPoint = 620;
   useEffect(() => {
-    window.addEventListener("resize", () => {
-      setWidth(window.innerWidth);
-    });
+    setWidth(window.innerWidth);
+    localStorage.setItem("width", window.innerWidth);
   }, []);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWidth(window.innerWidth);
+      localStorage.setItem("width", window.innerWidth);
+    };
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+ 
+  const breakPoint = 768;
   return width < breakPoint ? <SmallerScreen /> : <LargeScreen />;
 }
 

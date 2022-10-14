@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState,useEffect}from "react";
 
 import Corousel from "./Corousel";
 import Details from "./Details";
@@ -28,17 +28,24 @@ const mobileLayout = `
   `;
   
 export default function Hero() {
-  const [width,setWidth] = React.useState(window.innerWidth);
+  const [width, setWidth] = useState();
+  useEffect(() => {
+    setWidth(window.innerWidth);
+    localStorage.setItem("width", window.innerWidth);
+  }, []);
 
-  React.useEffect(() => {
+  useEffect(() => {
     const handleResize = () => {
       setWidth(window.innerWidth);
+      localStorage.setItem("width", window.innerWidth);
     };
     window.addEventListener("resize", handleResize);
     return () => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
+ 
+  const breakPoint = 768;
 
   return (
     <div className="container mx-auto w-[80%] sm:w-[100%]  max-w-2xl sm:max-w-3xl mt-4  ">
