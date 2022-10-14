@@ -14,7 +14,7 @@ const mobileLayout = `
       relative
       -mt-44     bg-white 
       mx-auto 
-      w-[90%]
+      w-[80%]
       rounded-3xl
       flex
       justify-center 
