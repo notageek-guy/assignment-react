@@ -5,7 +5,7 @@ import Details from "./Details";
 import Pricing from "./Pricing";
 const mobileLayout = `
  
-  relative -mt-32 bg-white  mx-auto w-[90%] rounded-3xl p-5 flex flex-col items-center
+  relative -mt-32 bg-white  mx-auto w-[80%] rounded-3xl p-5 flex flex-col items-center
   border-2 shadow-md shadow-gray-400
   
   `
