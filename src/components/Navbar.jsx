@@ -30,7 +30,7 @@ const Logo = ({ size }) => (
 );
 const LargeScreen = () => {
   return (
-    <div className="navbar bg-base-100 shadow-md">
+    <div className="navbar bg-base-100 font-lora  italic text-md    shadow-md">
       <div className="navbar-start">
         <Logo size={"w-24"} />
       </div>
@@ -52,7 +52,7 @@ const LargeScreen = () => {
 const SmallerScreen = () => {
   return (
     <>
-      <div className="navbar bg-base-100 shadow-md">
+      <div className="navbar bg-base-100 font-lora italic text-md  shadow-md">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">

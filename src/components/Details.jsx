@@ -3,7 +3,7 @@ import React from 'react'
 import bgImg from "../assets/bg.jpg";
 export default function Details() {
   return (
-    <div className="relative text-center">
+    <div className="relative text-center italic font-lora ">
     <img
       src={bgImg}
       alt="bg--image"

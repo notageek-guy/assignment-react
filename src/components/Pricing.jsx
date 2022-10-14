@@ -48,7 +48,7 @@ const MobileSection = () => {
 
 const DesktopSection = () => {
   return (
-    <div className="flex flex-col mb-auto">
+    <div className="flex flex-col mb-auto font-lora italic ">
       <h1 className="text-center text-2xl ">Card Title</h1>
       <div className="flex justify-center gap-3">
         <div className="flex">
@@ -60,12 +60,12 @@ const DesktopSection = () => {
         </div>
       </div>
       <div className="w-72 px-2">
-        <p className="text-center  text-ellipsis tracking-wide leading-relaxed">
+        <p className="text-center italic text-gray-800 text-ellipsis tracking-wide leading-relaxed">
           Donec eu ornare mi. Sed Finibus condimentum mauris, ut dictum eros
           maximum vitae. Nullam condimenutm tortor ac elit
         </p>
       </div>
-      <button className="rounded-2xl bg-black mx-auto px-7 my-2 shadow-md shadow-gray-400 py-3 text-white">
+      <button className="rounded-2xl italic bg-black mx-auto px-7 my-2 shadow-md shadow-gray-400 py-3 text-white">
         Try this Card
       </button>
     </div>
