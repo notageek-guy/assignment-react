@@ -12,7 +12,7 @@ const mobileLayout = `
 
   const desktopLayout = `
       relative
-      -mt-44     bg-white 
+      -mt-40    bg-white 
       mx-auto 
       w-[80%]
       rounded-3xl
@@ -26,6 +26,7 @@ const mobileLayout = `
 
 
   `;
+  
 export default function Hero() {
   const [width,setWidth] = React.useState(window.innerWidth);
 
