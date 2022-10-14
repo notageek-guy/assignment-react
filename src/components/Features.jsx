@@ -5,7 +5,7 @@ const blurred = `
 export default function Features() {
   return (
     <>
-      <div className="container max-w-2xl mx-auto p-4 mt-8 w-[90%]  rounded-3xl">
+      <div className="container max-w-2xl mx-auto p-4 mt-8 w-[90%]  rounded-3xl ">
         <Title />
        <div className="border flex flex-col sm:flex sm:flex-row rounded-2xl p-4 justify-between ">
        <Row1 />

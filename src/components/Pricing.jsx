@@ -22,7 +22,7 @@ const MobileSection = () => {
     <>
       <div className="flex-col items-center mt-5  justify-center    py-4 ">
         <div className="flex  justify-center">
-          <button className="text-xl    bg-black  rounded-3xl  text-center p-4 text-white">
+          <button className="text-xl  px-8  bg-black  rounded-3xl  text-center p-4 text-white">
             Try This Card
           </button>
         </div>
@@ -65,7 +65,7 @@ const DesktopSection = () => {
           maximum vitae. Nullam condimenutm tortor ac elit
         </p>
       </div>
-      <button className="rounded-2xl bg-black mx-auto px-6 my-2 shadow-md shadow-gray-400 py-3 text-white">
+      <button className="rounded-2xl bg-black mx-auto px-7 my-2 shadow-md shadow-gray-400 py-3 text-white">
         Try this Card
       </button>
     </div>
